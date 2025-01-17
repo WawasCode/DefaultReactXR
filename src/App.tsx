@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { Line, OrbitControls } from "@react-three/drei";
 import { type Mesh } from "three";
 import {
   createXRStore,
@@ -25,7 +25,7 @@ function SpinningCube() {
   });
 
   return (
-    <mesh ref={cubeRef}>
+    <mesh ref={cubeRef} position={[0, 0, -1]}>
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color="yellow" />
     </mesh>
@@ -79,6 +79,7 @@ export default function App() {
   const store = createXRStore(options);
   return (
     <Canvas events={noEvents}>
+      <color attach="background" args={["lightblue"]} />
       <XR store={store}>
         <PointerEvents batchEvents={false} />
         <ambientLight intensity={0.5} />
@@ -98,6 +99,14 @@ export default function App() {
             <EnterXRButton />
           </Fullscreen>
         </IfInSessionMode>
+        <Line
+          points={[
+            [2, 0, 0],
+            [0, 0, -3],
+          ]}
+          color="red"
+          lineWidth={3}
+        />
       </XR>
     </Canvas>
   );
