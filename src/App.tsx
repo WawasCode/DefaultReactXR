@@ -12,7 +12,8 @@ import {
 } from "@react-three/xr";
 import { Fullscreen } from "@react-three/uikit";
 import { EnterXRButton } from "./EnterXRButton";
-
+import * as THREE from "three";
+import { PlaneMask } from "./PlaneMask";
 function SpinningCube() {
   const cubeRef = useRef<Mesh>(null);
 
@@ -78,12 +79,12 @@ export default function App() {
   };
   const store = createXRStore(options);
   return (
-    <Canvas events={noEvents}>
+    <Canvas events={noEvents} gl={{ stencil: true }}>
       <XR store={store}>
         <PointerEvents batchEvents={false} />
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} />
-        <SpinningCube />
+        {/* <SpinningCube /> */}
         <OrbitControls />
         <IfInSessionMode deny={["immersive-ar", "immersive-vr"]}>
           <Fullscreen
@@ -99,6 +100,28 @@ export default function App() {
           </Fullscreen>
         </IfInSessionMode>
       </XR>
+      <PlaneMask
+        stencilRef={2}
+        position={[2, 0, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+      >
+        {/* 
+           The box is rendered AFTER the plane, so set a higher renderOrder.
+           We do an EqualStencilFunc, so it only shows where stencilRef == 2.
+        */}
+        <mesh renderOrder={2} position={[2, -2, 0]}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshStandardMaterial
+            color="blue"
+            stencilWrite
+            stencilRef={2}
+            stencilFunc={THREE.EqualStencilFunc}
+            stencilFail={THREE.KeepStencilOp}
+            stencilZFail={THREE.KeepStencilOp}
+            stencilZPass={THREE.KeepStencilOp}
+          />
+        </mesh>
+      </PlaneMask>
     </Canvas>
   );
 }
