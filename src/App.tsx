@@ -1,7 +1,5 @@
-import { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { type Mesh } from "three";
 import {
   createXRStore,
   IfInSessionMode,
@@ -12,72 +10,65 @@ import {
 } from "@react-three/xr";
 import { Fullscreen } from "@react-three/uikit";
 import { EnterXRButton } from "./EnterXRButton";
-import * as THREE from "three";
-import { PlaneMask } from "./PlaneMask";
-function SpinningCube() {
-  const cubeRef = useRef<Mesh>(null);
-
-  // Animate rotation using useFrame
-  useFrame(() => {
-    if (cubeRef.current) {
-      cubeRef.current.rotation.x += 0.01;
-      cubeRef.current.rotation.y += 0.01;
-    }
-  });
-
-  return (
-    <mesh ref={cubeRef}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="yellow" />
-    </mesh>
-  );
-}
-
+import { PortalComponent } from "./PortalComponent";
+import { OrangeRoom } from "./Worlds";
+import { useSignal } from "@preact/signals-react";
+const OPTIONS: XRStoreOptions = {
+  handTracking: true,
+  foveation: 0,
+  domOverlay: false,
+  hand: {
+    touchPointer: {
+      cursorModel: {
+        color: "blue",
+        size: 0.2,
+      },
+    },
+    grabPointer: {
+      cursorModel: {
+        color: "hotpink",
+        size: 0.2,
+      },
+    },
+    rayPointer: {
+      rayModel: { color: "green" },
+      cursorModel: {
+        color: "green",
+        size: 0.2,
+      },
+    },
+    teleportPointer: false,
+  },
+  controller: {
+    grabPointer: {
+      cursorModel: {
+        color: "hotpink",
+        size: 0.2,
+      },
+    },
+    rayPointer: {
+      rayModel: { color: "green" },
+      cursorModel: {
+        color: "green",
+        size: 0.2,
+      },
+    },
+    teleportPointer: false,
+  },
+};
 export default function App() {
-  const options: XRStoreOptions = {
-    handTracking: true,
-    foveation: 0,
-    domOverlay: false,
-    hand: {
-      touchPointer: {
-        cursorModel: {
-          color: "blue",
-          size: 0.2,
-        },
-      },
-      grabPointer: {
-        cursorModel: {
-          color: "hotpink",
-          size: 0.2,
-        },
-      },
-      rayPointer: {
-        rayModel: { color: "green" },
-        cursorModel: {
-          color: "green",
-          size: 0.2,
-        },
-      },
-      teleportPointer: false,
-    },
-    controller: {
-      grabPointer: {
-        cursorModel: {
-          color: "hotpink",
-          size: 0.2,
-        },
-      },
-      rayPointer: {
-        rayModel: { color: "green" },
-        cursorModel: {
-          color: "green",
-          size: 0.2,
-        },
-      },
-      teleportPointer: false,
-    },
+  const store = createXRStore(OPTIONS);
+  const portalOrangeRoomID = useSignal(2);
+  const orangeRoomID = useSignal(2);
+  const invertOrangeRoomStencile = useSignal(true);
+  const onEnterOrangeRoom = () => {
+    invertOrangeRoomStencile.value = false;
+    portalOrangeRoomID.value = 1;
   };
-  const store = createXRStore(options);
+  const onLeaveOrangeRoom = () => {
+    invertOrangeRoomStencile.value = true;
+    portalOrangeRoomID.value = 2;
+  };
   return (
     <Canvas events={noEvents} gl={{ stencil: true }}>
       <XR store={store}>
@@ -99,29 +90,22 @@ export default function App() {
             <EnterXRButton />
           </Fullscreen>
         </IfInSessionMode>
-      </XR>
-      <PlaneMask
-        stencilRef={2}
-        position={[2, 0, 0]}
-        rotation={[-Math.PI / 2, 0, 0]}
-      >
-        {/* 
-           The box is rendered AFTER the plane, so set a higher renderOrder.
-           We do an EqualStencilFunc, so it only shows where stencilRef == 2.
-        */}
-        <mesh renderOrder={2} position={[2, -2, 0]}>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial
-            color="blue"
-            stencilWrite
-            stencilRef={2}
-            stencilFunc={THREE.EqualStencilFunc}
-            stencilFail={THREE.KeepStencilOp}
-            stencilZFail={THREE.KeepStencilOp}
-            stencilZPass={THREE.KeepStencilOp}
+        <group position={[-2, 0, 0]} scale={[0.6, 0.6, 0.6]}>
+          <PortalComponent
+            portalId={portalOrangeRoomID.value}
+            position={[0, 0, 0]}
+            rotation={[0, Math.PI / 2, 0]}
+            onEnterPortal={onEnterOrangeRoom}
+            onLeavePortal={onLeaveOrangeRoom}
           />
-        </mesh>
-      </PlaneMask>
+          <OrangeRoom
+            portalId={orangeRoomID.value}
+            scale={3}
+            position={[-3, 1.3, 3]}
+            invert={invertOrangeRoomStencile.value}
+          />
+        </group>
+      </XR>
     </Canvas>
   );
 }
