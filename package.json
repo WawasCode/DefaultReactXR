@@ -12,7 +12,7 @@
   "dependencies": {
     "@preact/signals-react": "^3.0.1",
     "@react-three/drei": "^9.121.2",
-    "@react-three/fiber": "^8.17.12",
+    "@react-three/fiber": "^8.17.14",
     "@react-three/uikit": "^0.8.5",
     "@react-three/xr": "^6.4.12",
     "@types/three": "^0.172.0",
