@@ -10,9 +10,32 @@ import {
   XR,
   XRStoreOptions,
 } from "@react-three/xr";
-import { Fullscreen } from "@react-three/uikit";
-import { EnterXRButton } from "./EnterXRButton";
+import { Container, Fullscreen } from "@react-three/uikit";
 
+function FlexWrap() {
+  return (
+    <Container gap={10} padding={10} backgroundColor={"hotPink"}>
+      <Container flexDirection="column" alignItems="center">
+        {/* this is also breaking center and column */}
+        <Container borderColor="red" borderWidth={2}>
+          {/* <Container width={100} height={50} backgroundColor="green" /> */}
+          {/* above is breaking when added */}
+          <Container
+            gap={5}
+            alignContent="space-around"
+            flexWrap="wrap"
+            borderColor="blue"
+            borderWidth={2}
+          >
+            <Container width={250} height={50} backgroundColor="gray" />
+            <Container width={250} height={50} backgroundColor="gray" />
+            <Container width={250} height={50} backgroundColor="gray" />
+          </Container>
+        </Container>
+      </Container>
+    </Container>
+  );
+}
 function SpinningCube() {
   const cubeRef = useRef<Mesh>(null);
 
@@ -86,17 +109,17 @@ export default function App() {
         <SpinningCube />
         <OrbitHandles damping />
         <IfInSessionMode deny={["immersive-ar", "immersive-vr"]}>
-        <Fullscreen
-          pointerEvents="listener"
-          flexDirection="row"
-          padding={20}
-          paddingRight={50}
-           alignItems="flex-start"
-          justifyContent="flex-end"
-          pointerEventsOrder={2}
-        >
-          <EnterXRButton />
-        </Fullscreen>
+          <Fullscreen
+            pointerEvents="listener"
+            flexDirection="row"
+            padding={20}
+            paddingRight={50}
+            alignItems="flex-start"
+            justifyContent="flex-end"
+            pointerEventsOrder={2}
+          >
+            <FlexWrap />
+          </Fullscreen>
         </IfInSessionMode>
       </XR>
     </Canvas>
