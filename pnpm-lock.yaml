@@ -18,8 +18,8 @@ importers:
         specifier: ^8.17.14
         version: 8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)
       '@react-three/uikit':
-        specifier: ^0.8.5
-        version: 0.8.5(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)
+        specifier: ^0.8.12
+        version: 0.8.12(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)
       '@react-three/xr':
         specifier: ^6.6.5
         version: 6.6.5(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)
@@ -505,14 +505,14 @@ packages:
   '@pmndrs/handle@6.6.5':
     resolution: {integrity: sha512-mjlhQUa0pCFF+68RFYMe9YurHPnpmUIZL/PjQmt23G8wvkvUU4Bpa243xdG89VyTOkW/GvWSxXKN52I7jvLC8g==}
 
-  '@pmndrs/msdfonts@0.8.5':
-    resolution: {integrity: sha512-2UOD6oz5beaK+5ZoqvPC5rG0DKovcBvFsnhmkJer/Vd9DGs/2xF4PAM4s1FAvVKw0p9kuQ+ht1+u54KK4Yd+zQ==}
+  '@pmndrs/msdfonts@0.8.12':
+    resolution: {integrity: sha512-qxM58s1x2mCwswIxiR04jq1zF7yCsvtugTUm7l58f0ywaif75TFGEuuc+TpYroSxbAkmZXSuqyH8/AZsSQuBRg==}
 
   '@pmndrs/pointer-events@6.6.5':
     resolution: {integrity: sha512-CqCmUwzz5NAjO6kgpiX7Y61xffToV82F/+vRsy+IzLEJxRoqgSIIXCJKKknfOcx6O3825s2z2geDCABPc0kHRw==}
 
-  '@pmndrs/uikit@0.8.5':
-    resolution: {integrity: sha512-MYaZablGHDZe/Z+eXV8q1geiwEvuCpDjFjQBwQVjRuIq4fEhM5KmbQD2SyfMrplMeusx8O5ew5bAW8sYPH2Xmw==}
+  '@pmndrs/uikit@0.8.12':
+    resolution: {integrity: sha512-siWbGmlsZR/za4LGxJCgSJySiISyMeM+ePLGwUFfcQ8P01uUV7DKSbT77DsmVwkz/qPM0BTTwOl0+sRSzXgGmg==}
     peerDependencies:
       three: '>=0.160'
 
@@ -622,8 +622,8 @@ packages:
       react-native:
         optional: true
 
-  '@react-three/uikit@0.8.5':
-    resolution: {integrity: sha512-/b9BpRy4SN0Qgd8bo888FDeePPBtGu7fWAPnpEabp84ZWI68YU7laHHi8PPxqTJxY53EkxYj35NIoNuMOOVeHA==}
+  '@react-three/uikit@0.8.12':
+    resolution: {integrity: sha512-5zTvVDfNJXIR/6a5gxwXvNiAsA5U8iNTyQ+Rl8QWTnfDKkt6FtxHGNTqn9BTMfbzjs8L5LWAxP4YRp7LKwYH1w==}
     hasBin: true
     peerDependencies:
       '@react-three/fiber': '>=8'
@@ -1238,8 +1238,8 @@ packages:
   flatted@3.3.2:
     resolution: {integrity: sha512-AiwGJM8YcNOaobumgtng+6NHuOqC3A7MixFeDafM3X9cIUM+xUXoS5Vfgf+OihAYe20fxqNM9yPBXJzRtZ/4eA==}
 
-  foreground-child@3.3.0:
-    resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
+  foreground-child@3.3.1:
+    resolution: {integrity: sha512-gIXjKqtFuWEgzFRJA9WCQeSJLZDjgJUOMCMzxtvFq/37KojM1BFGufqsCy0r4qSQmYLsZYMeyRqzIWOMup03sw==}
     engines: {node: '>=14'}
 
   fsevents@2.3.3:
@@ -1543,8 +1543,8 @@ packages:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
 
-  ora@8.1.1:
-    resolution: {integrity: sha512-YWielGi1XzG1UTvOaCFaNgEnuhZVMSHYkW/FQ7UX8O26PtlpdM84c0f7wLPlkvx2RfiQmnzd61d/MGxmpQeJPw==}
+  ora@8.2.0:
+    resolution: {integrity: sha512-weP+BZ8MVNnlCm8c0Qdc1WSWq4Qn7I+9CJGm7Qali6g44e/PUzbjNqJX5NJ9ljlNMosfJvg1fKEGILklK9cwnw==}
     engines: {node: '>=18'}
 
   p-limit@3.1.0:
@@ -2061,8 +2061,8 @@ packages:
   yoga-layout@3.2.1:
     resolution: {integrity: sha512-0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==}
 
-  zod@3.24.1:
-    resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
+  zod@3.24.2:
+    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
 
   zustand@3.7.2:
     resolution: {integrity: sha512-PIJDIZKtokhof+9+60cpockVOq05sJzHCriyvaLBmEJixseQ1a5Kdov6fWZfWOu5SK9c+FhH1jU0tntLxRJYMA==}
@@ -2499,13 +2499,13 @@ snapshots:
       - immer
       - react
 
-  '@pmndrs/msdfonts@0.8.5': {}
+  '@pmndrs/msdfonts@0.8.12': {}
 
   '@pmndrs/pointer-events@6.6.5': {}
 
-  '@pmndrs/uikit@0.8.5(three@0.172.0)':
+  '@pmndrs/uikit@0.8.12(three@0.172.0)':
     dependencies:
-      '@pmndrs/msdfonts': 0.8.5
+      '@pmndrs/msdfonts': 0.8.12
       '@preact/signals-core': 1.8.0
       inline-style-parser: 0.2.4
       node-html-parser: 6.1.13
@@ -2677,18 +2677,18 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@react-three/uikit@0.8.5(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)':
+  '@react-three/uikit@0.8.12(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)':
     dependencies:
-      '@pmndrs/uikit': 0.8.5(three@0.172.0)
+      '@pmndrs/uikit': 0.8.12(three@0.172.0)
       '@preact/signals-core': 1.8.0
       '@react-three/fiber': 8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)
       chalk: 5.4.1
       commander: 12.1.0
-      ora: 8.1.1
+      ora: 8.2.0
       prettier: 3.4.2
       prompts: 2.4.2
       react: 18.3.1
-      zod: 3.24.1
+      zod: 3.24.2
       zustand: 4.5.6(@types/react@18.3.18)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
@@ -3318,7 +3318,7 @@ snapshots:
 
   flatted@3.3.2: {}
 
-  foreground-child@3.3.0:
+  foreground-child@3.3.1:
     dependencies:
       cross-spawn: 7.0.6
       signal-exit: 4.1.0
@@ -3344,7 +3344,7 @@ snapshots:
 
   glob@10.4.5:
     dependencies:
-      foreground-child: 3.3.0
+      foreground-child: 3.3.1
       jackspeak: 3.4.3
       minimatch: 9.0.5
       minipass: 7.1.2
@@ -3569,7 +3569,7 @@ snapshots:
       type-check: 0.4.0
       word-wrap: 1.2.5
 
-  ora@8.1.1:
+  ora@8.2.0:
     dependencies:
       chalk: 5.4.1
       cli-cursor: 5.0.0
@@ -4082,7 +4082,7 @@ snapshots:
 
   yoga-layout@3.2.1: {}
 
-  zod@3.24.1: {}
+  zod@3.24.2: {}
 
   zustand@3.7.2(react@18.3.1):
     optionalDependencies:
