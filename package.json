@@ -15,10 +15,10 @@
     "@react-three/fiber": "^8.17.14",
     "@react-three/uikit": "^0.8.5",
     "@react-three/xr": "^6.6.5",
-    "@types/three": "^0.172.0",
+    "@types/three": "^0.174.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "three": "^0.172.0"
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
