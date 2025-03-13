@@ -21,8 +21,8 @@ importers:
         specifier: ^0.8.5
         version: 0.8.5(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)
       '@react-three/xr':
-        specifier: ^6.6.5
-        version: 6.6.5(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)
+        specifier: ^6.6.9
+        version: 6.6.9(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)
       '@types/three':
         specifier: ^0.172.0
         version: 0.172.0
@@ -446,13 +446,13 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@iwer/devui@1.1.0':
-    resolution: {integrity: sha512-V29R4VTINoPVVzW3X65ad/4pSdCR+s+xOpcznaBe1JZ/GLs7+XfTYkuKDqvVRYeYtyWVt9pK5+zhNKsqE4wlBQ==}
+  '@iwer/devui@1.1.1':
+    resolution: {integrity: sha512-S+m+qf9ih7LiSlmMpPProBySt6fV/G5iF/axv1pl0wmgiZVtJNnUV0Ezt0jarBNonZ2wXD9sqrf/JwjgLqXE6g==}
     peerDependencies:
-      iwer: ^2.0.0
+      iwer: ^2.0.1
 
-  '@iwer/sem@0.2.3':
-    resolution: {integrity: sha512-JbBAx2JVYU+zIM/Glcfjn5dMQVofiQzgNIlE28rmB/xOj03Aqy9H15Bh2+PSAWSLUbKB54T/JS9bsSXTNI4omw==}
+  '@iwer/sem@0.2.5':
+    resolution: {integrity: sha512-vMCfpu/7Qqc+hkBiGD9pxjeObgrhXOrL0KX94CA3yzJaU0dq0y49HXZT6fC+6X/jOmjaM3hjyE1m2h7ZmLzzyA==}
     peerDependencies:
       iwer: ^2.0.0
 
@@ -502,22 +502,22 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@pmndrs/handle@6.6.5':
-    resolution: {integrity: sha512-mjlhQUa0pCFF+68RFYMe9YurHPnpmUIZL/PjQmt23G8wvkvUU4Bpa243xdG89VyTOkW/GvWSxXKN52I7jvLC8g==}
+  '@pmndrs/handle@6.6.9':
+    resolution: {integrity: sha512-gZuT/6V4PX9x7XEDeFbKm1xUAXRvlO9SfEZjFUrfQCunw+1FdAVYncpvPd/a0j5ZgSJLAOZ+d3cvP5SweLdVAw==}
 
   '@pmndrs/msdfonts@0.8.5':
     resolution: {integrity: sha512-2UOD6oz5beaK+5ZoqvPC5rG0DKovcBvFsnhmkJer/Vd9DGs/2xF4PAM4s1FAvVKw0p9kuQ+ht1+u54KK4Yd+zQ==}
 
-  '@pmndrs/pointer-events@6.6.5':
-    resolution: {integrity: sha512-CqCmUwzz5NAjO6kgpiX7Y61xffToV82F/+vRsy+IzLEJxRoqgSIIXCJKKknfOcx6O3825s2z2geDCABPc0kHRw==}
+  '@pmndrs/pointer-events@6.6.9':
+    resolution: {integrity: sha512-EGE4GdnCwvargSFtEJjS1+drhz9jnIpm1Pcirj0JxC+KTASM4meQ0Ga/0RNA6Fd7Ms3hTCVyf5d1uE0Xm1I+hg==}
 
   '@pmndrs/uikit@0.8.5':
     resolution: {integrity: sha512-MYaZablGHDZe/Z+eXV8q1geiwEvuCpDjFjQBwQVjRuIq4fEhM5KmbQD2SyfMrplMeusx8O5ew5bAW8sYPH2Xmw==}
     peerDependencies:
       three: '>=0.160'
 
-  '@pmndrs/xr@6.6.5':
-    resolution: {integrity: sha512-n5L+S0ALwim5nvw9XdwFJEMOfTBEdmH+u0XIQTVYewN8B462zR8ZHTeHEFZON1Hqoy8qDzHH5gis8zBqhxYSOg==}
+  '@pmndrs/xr@6.6.9':
+    resolution: {integrity: sha512-vBQsRcMQCMbCu5r5BUxHgXJS1goo20GCA0Jvb43UPqwxvggCAPRgSZyGqvG+x4NPVcr0yW/rYGgPtBcihu4FAg==}
     peerDependencies:
       three: '*'
 
@@ -629,8 +629,8 @@ packages:
       '@react-three/fiber': '>=8'
       react: '>=18'
 
-  '@react-three/xr@6.6.5':
-    resolution: {integrity: sha512-9YBTNcft9swBxa+5KlE30Z1jgFDMCWctM/D9DeoYo++Qj/bBP+KXAO+SgFl8uL1BJgZKHmRRvxU1gcz7LzcRgQ==}
+  '@react-three/xr@6.6.9':
+    resolution: {integrity: sha512-nbUSLXamPYVlYjcDRDDU1vUqXwvvxLSGKthGilA2sniSGc1Xjayie8JVX3faReEGcKjQf2+V5JKmYgQje1Fuvg==}
     peerDependencies:
       '@react-three/fiber': '>=8'
       react: '>=18'
@@ -1374,8 +1374,8 @@ packages:
     peerDependencies:
       react: '>=18.0'
 
-  iwer@2.0.0:
-    resolution: {integrity: sha512-ZHIoXzJouDPU6x4gKhmmYDUEt8aPGvWJFURLy1iJeFrdBMPVwlQPXas58JSIhF5kMPW7ivFkzbrtacK3PbqWcA==}
+  iwer@2.0.1:
+    resolution: {integrity: sha512-kNjh8DDWGSnbiK6jKcVLYVRLFCMBQ4+sVyHZ3La4EJYTCTY+Trrnagf6z3oCdNpC4OTiwcPdakunTAqZhoWK+A==}
 
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
@@ -2427,14 +2427,14 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@iwer/devui@1.1.0(@types/react@18.3.18)(iwer@2.0.0)':
+  '@iwer/devui@1.1.1(@types/react@18.3.18)(iwer@2.0.1)':
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.6.0
       '@fortawesome/free-solid-svg-icons': 6.6.0
       '@fortawesome/react-fontawesome': 0.2.2(@fortawesome/fontawesome-svg-core@6.6.0)(react@18.3.1)
-      '@pmndrs/handle': 6.6.5(@types/react@18.3.18)(react@18.3.1)
-      '@pmndrs/pointer-events': 6.6.5
-      iwer: 2.0.0
+      '@pmndrs/handle': 6.6.9(@types/react@18.3.18)(react@18.3.1)
+      '@pmndrs/pointer-events': 6.6.9
+      iwer: 2.0.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       styled-components: 6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2443,9 +2443,9 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@iwer/sem@0.2.3(iwer@2.0.0)':
+  '@iwer/sem@0.2.5(iwer@2.0.1)':
     dependencies:
-      iwer: 2.0.0
+      iwer: 2.0.1
       three: 0.165.0
       ts-proto: 2.6.1
 
@@ -2490,9 +2490,9 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@pmndrs/handle@6.6.5(@types/react@18.3.18)(react@18.3.1)':
+  '@pmndrs/handle@6.6.9(@types/react@18.3.18)(react@18.3.1)':
     dependencies:
-      '@pmndrs/pointer-events': 6.6.5
+      '@pmndrs/pointer-events': 6.6.9
       zustand: 4.5.6(@types/react@18.3.18)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
@@ -2501,7 +2501,7 @@ snapshots:
 
   '@pmndrs/msdfonts@0.8.5': {}
 
-  '@pmndrs/pointer-events@6.6.5': {}
+  '@pmndrs/pointer-events@6.6.9': {}
 
   '@pmndrs/uikit@0.8.5(three@0.172.0)':
     dependencies:
@@ -2515,12 +2515,12 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  '@pmndrs/xr@6.6.5(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)':
+  '@pmndrs/xr@6.6.9(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)':
     dependencies:
-      '@iwer/devui': 1.1.0(@types/react@18.3.18)(iwer@2.0.0)
-      '@iwer/sem': 0.2.3(iwer@2.0.0)
-      '@pmndrs/pointer-events': 6.6.5
-      iwer: 2.0.0
+      '@iwer/devui': 1.1.1(@types/react@18.3.18)(iwer@2.0.1)
+      '@iwer/sem': 0.2.5(iwer@2.0.1)
+      '@pmndrs/pointer-events': 6.6.9
+      iwer: 2.0.1
       meshline: 3.3.1(three@0.172.0)
       three: 0.172.0
       zustand: 4.5.6(@types/react@18.3.18)(react@18.3.1)
@@ -2696,10 +2696,10 @@ snapshots:
       - three
       - ts-node
 
-  '@react-three/xr@6.6.5(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)':
+  '@react-three/xr@6.6.9(@react-three/fiber@8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)':
     dependencies:
-      '@pmndrs/pointer-events': 6.6.5
-      '@pmndrs/xr': 6.6.5(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)
+      '@pmndrs/pointer-events': 6.6.9
+      '@pmndrs/xr': 6.6.9(@types/react@18.3.18)(react@18.3.1)(three@0.172.0)
       '@react-three/fiber': 8.17.14(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.172.0)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -3421,7 +3421,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  iwer@2.0.0:
+  iwer@2.0.1:
     dependencies:
       gl-matrix: 3.4.3
 
