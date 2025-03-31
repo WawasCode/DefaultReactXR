@@ -17,7 +17,7 @@
     "@react-three/uikit": "^0.8.14",
     "@react-three/xr": "^6.6.9",
     "@types/three": "^0.174.0",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0",
     "three": "^0.174.0"
   },
