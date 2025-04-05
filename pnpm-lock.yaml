@@ -24,8 +24,8 @@ importers:
         specifier: ^0.8.14
         version: 0.8.14(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
       '@react-three/xr':
-        specifier: ^6.6.9
-        version: 6.6.9(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
+        specifier: ^6.6.12
+        version: 6.6.12(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       '@types/three':
         specifier: ^0.175.0
         version: 0.175.0
@@ -207,8 +207,8 @@ packages:
     resolution: {integrity: sha512-emqcG3vHrpxUKTrxcblR36dcrcoRDvKmnL/dCL6ZsHaShW80qxCAcNhzQZrpeM765VzEos+xOi4s+r4IXzTwdQ==}
     engines: {node: '>=6.9.0'}
 
-  '@bufbuild/protobuf@2.2.3':
-    resolution: {integrity: sha512-tFQoXHJdkEOSwj5tRIZSPNUuXK3RaR7T1nUrPgbYX1pUbvqqaaZAsfo+NXBPsz5rZMSKVFrgK1WL8Q/MSLvprg==}
+  '@bufbuild/protobuf@2.2.5':
+    resolution: {integrity: sha512-/g5EzJifw5GF8aren8wZ/G5oMuPoGeS6MQD3ca8ddcvdXR5UELUfdTZITCGNhNXynY/AYl3Z4plmxdj/tRl/hQ==}
 
   '@emotion/is-prop-valid@1.2.2':
     resolution: {integrity: sha512-uNsoYd37AFmaCdXlg6EYD1KaPOaRWRByMCYzbKUX4+hhMfrxdVSelShywL4JVaAeM/eHUOSprYBQls+/neX3pw==}
@@ -518,16 +518,13 @@ packages:
   '@pmndrs/pointer-events@6.6.12':
     resolution: {integrity: sha512-OLPXN1cmOemmTexnAgGKJL72df4nlpSJjzw4Frzb0QZHkgYtvmEqda/+sS9IpUO5PEYBIDHqpP6/x5YtJHyVEQ==}
 
-  '@pmndrs/pointer-events@6.6.9':
-    resolution: {integrity: sha512-EGE4GdnCwvargSFtEJjS1+drhz9jnIpm1Pcirj0JxC+KTASM4meQ0Ga/0RNA6Fd7Ms3hTCVyf5d1uE0Xm1I+hg==}
-
   '@pmndrs/uikit@0.8.14':
     resolution: {integrity: sha512-fbafd60BIiNGUdBMpjf9EFCA165lhB3rDEjwF9QmL9W8GjQI2RsgTumRmRNtpwpTAv2WSRRhmO87zUsvd3DfUw==}
     peerDependencies:
       three: '>=0.160'
 
-  '@pmndrs/xr@6.6.9':
-    resolution: {integrity: sha512-vBQsRcMQCMbCu5r5BUxHgXJS1goo20GCA0Jvb43UPqwxvggCAPRgSZyGqvG+x4NPVcr0yW/rYGgPtBcihu4FAg==}
+  '@pmndrs/xr@6.6.12':
+    resolution: {integrity: sha512-XJl8TCbJTpg2ekRyApxU//H3K+VkzI+sIEqOJmsfoGIJ9Ed7e7eCSrmfJwsUyb3laPHLe0/G8Jb21kLKuuTkuQ==}
     peerDependencies:
       three: '*'
 
@@ -618,8 +615,8 @@ packages:
       '@react-three/fiber': '>=8'
       react: '>=18'
 
-  '@react-three/xr@6.6.9':
-    resolution: {integrity: sha512-nbUSLXamPYVlYjcDRDDU1vUqXwvvxLSGKthGilA2sniSGc1Xjayie8JVX3faReEGcKjQf2+V5JKmYgQje1Fuvg==}
+  '@react-three/xr@6.6.12':
+    resolution: {integrity: sha512-1Xdg2QYC7FoeabLwKJdscbwe9P3ziUYm+uty9dmYRH/CTqPlyG9xW6OmmVIugB8iRQasHzKSOxp5LwklFRViZQ==}
     peerDependencies:
       '@react-three/fiber': '>=8'
       react: '>=18'
@@ -1925,8 +1922,8 @@ packages:
   ts-proto-descriptors@2.0.0:
     resolution: {integrity: sha512-wHcTH3xIv11jxgkX5OyCSFfw27agpInAd6yh89hKG6zqIXnjW9SYqSER2CVQxdPj4czeOhGagNvZBEbJPy7qkw==}
 
-  ts-proto@2.6.1:
-    resolution: {integrity: sha512-4LTT99MkwkF1+fIA0b2mZu/58Qlpq3Q1g53TwEMZZgR1w/uX00PoVT4Z8aKJxMw0LeKQD4s9NrJYsF27Clckrg==}
+  ts-proto@2.7.0:
+    resolution: {integrity: sha512-BGHjse2wTOeswOqnnPKinpxmbaRd882so/e1En6ww59YMG7AO9Kg4vPpJcbVfrpBixPRDqHafXD/RDyd2T99GA==}
     hasBin: true
 
   tslib@2.6.2:
@@ -2255,7 +2252,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@bufbuild/protobuf@2.2.3': {}
+  '@bufbuild/protobuf@2.2.5': {}
 
   '@emotion/is-prop-valid@1.2.2':
     dependencies:
@@ -2444,7 +2441,7 @@ snapshots:
     dependencies:
       iwer: 2.0.1
       three: 0.165.0
-      ts-proto: 2.6.1
+      ts-proto: 2.7.0
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
@@ -2509,8 +2506,6 @@ snapshots:
 
   '@pmndrs/pointer-events@6.6.12': {}
 
-  '@pmndrs/pointer-events@6.6.9': {}
-
   '@pmndrs/uikit@0.8.14(three@0.175.0)':
     dependencies:
       '@pmndrs/msdfonts': 0.8.14
@@ -2523,7 +2518,7 @@ snapshots:
     transitivePeerDependencies:
       - ts-node
 
-  '@pmndrs/xr@6.6.9(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)':
+  '@pmndrs/xr@6.6.12(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)':
     dependencies:
       '@iwer/devui': 1.1.1(@types/react@19.1.0)(iwer@2.0.1)
       '@iwer/sem': 0.2.5(iwer@2.0.1)
@@ -2679,10 +2674,10 @@ snapshots:
       - three
       - ts-node
 
-  '@react-three/xr@6.6.9(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
+  '@react-three/xr@6.6.12(@react-three/fiber@9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0))(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)':
     dependencies:
-      '@pmndrs/pointer-events': 6.6.9
-      '@pmndrs/xr': 6.6.9(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
+      '@pmndrs/pointer-events': 6.6.12
+      '@pmndrs/xr': 6.6.12(@types/react@19.1.0)(react@19.1.0)(three@0.175.0)
       '@react-three/fiber': 9.1.0(@types/react@19.1.0)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.175.0)
       react: 19.1.0
       react-dom: 19.0.0(react@19.1.0)
@@ -3965,11 +3960,11 @@ snapshots:
 
   ts-proto-descriptors@2.0.0:
     dependencies:
-      '@bufbuild/protobuf': 2.2.3
+      '@bufbuild/protobuf': 2.2.5
 
-  ts-proto@2.6.1:
+  ts-proto@2.7.0:
     dependencies:
-      '@bufbuild/protobuf': 2.2.3
+      '@bufbuild/protobuf': 2.2.5
       case-anything: 2.1.13
       ts-poet: 6.11.0
       ts-proto-descriptors: 2.0.0
