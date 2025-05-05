@@ -18,8 +18,8 @@ importers:
         specifier: ^9.1.2
         version: 9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0)
       '@react-three/handle':
-        specifier: ^6.6.14
-        version: 6.6.14(@react-three/fiber@9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0))(@types/react@19.1.2)(react@19.1.0)(three@0.176.0)
+        specifier: ^6.6.16
+        version: 6.6.16(@react-three/fiber@9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0))(@types/react@19.1.2)(react@19.1.0)(three@0.176.0)
       '@react-three/uikit':
         specifier: ^0.8.15
         version: 0.8.15(@react-three/fiber@9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0))(@types/react@19.1.2)(react@19.1.0)(three@0.176.0)
@@ -508,14 +508,17 @@ packages:
     resolution: {integrity: sha512-VzgHzGblFmUeBmmrk55zPyrQIArQN4vujc9shWytaPdB3P7qhi0cpaiKIr7tlCmFv2lYUwnLospIqjL9ZSAhhg==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@pmndrs/handle@6.6.14':
-    resolution: {integrity: sha512-G9pz4Ubpctyzvqq4Vra0PKDSJS8KC5/jizu22LiEMM7krXHwHgFJF5yzNjaOMDGKk7/h4IzB/7CQfPpxmqCKsg==}
+  '@pmndrs/handle@6.6.16':
+    resolution: {integrity: sha512-+//YQ9Hw3emvgAM3WuWEtbdPE6T4m1RBdfDIblPNb2iDGGPdnQXlVVfQL3DKeRjw3SDpVnitLN+cDAiaQb4HcQ==}
 
   '@pmndrs/msdfonts@0.8.15':
     resolution: {integrity: sha512-5D65OLTR3Is3cQ30GQpbL8BMux0C7FgIclOgaScCobt+Zbz2e1l1XVBLQZaVCDME/NKVkpv5ai9rOMK94Vdxfg==}
 
   '@pmndrs/pointer-events@6.6.14':
     resolution: {integrity: sha512-DRn5QJIwUMkdH0L59NwMxY6PFd6vmyjkz2RVryM5vQ5OJVveYG2ErQjFeLZnCD7oavlKnzB+7ZpHakRMocGdBw==}
+
+  '@pmndrs/pointer-events@6.6.16':
+    resolution: {integrity: sha512-RhID/DVWGWguqcOyQk87EeRA4vNMS/9b9CqCRVpr4J10GfqW3iCCIwPpQkIqEDczxlUABgtZMmGHnoAbPHr3rQ==}
 
   '@pmndrs/uikit@0.8.15':
     resolution: {integrity: sha512-guL1AR2AiYoaCrSL9NWo9Uwz0VNrsJYgIM9b8wv82g/XBss5nHoUeMlCHhWETjWWAog5rDDTWONISgBNenvarw==}
@@ -600,8 +603,8 @@ packages:
       react-native:
         optional: true
 
-  '@react-three/handle@6.6.14':
-    resolution: {integrity: sha512-mLza0f016bv2YMT4P3V0ezXwyt7pq/T0E1qka72v/NSXOAOr+cnMie3BqkAjLn4EkY+5eNicK0Ha+JtxguFekQ==}
+  '@react-three/handle@6.6.16':
+    resolution: {integrity: sha512-lgDdI7hA48U3F5NhgGbH7KcKKx9lvALh1vtrI6Fmokv09LUaWflccivxykxKivKwVguAwRJnQ9dRX+KCh9YFZg==}
     peerDependencies:
       '@react-three/fiber': '>=8'
       react: '>=18'
@@ -2426,8 +2429,8 @@ snapshots:
       '@fortawesome/fontawesome-svg-core': 6.6.0
       '@fortawesome/free-solid-svg-icons': 6.6.0
       '@fortawesome/react-fontawesome': 0.2.2(@fortawesome/fontawesome-svg-core@6.6.0)(react@18.3.1)
-      '@pmndrs/handle': 6.6.14(@types/react@19.1.2)(react@18.3.1)
-      '@pmndrs/pointer-events': 6.6.14
+      '@pmndrs/handle': 6.6.16(@types/react@19.1.2)(react@18.3.1)
+      '@pmndrs/pointer-events': 6.6.16
       iwer: 2.0.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -2484,18 +2487,18 @@ snapshots:
 
   '@pkgr/core@0.2.1': {}
 
-  '@pmndrs/handle@6.6.14(@types/react@19.1.2)(react@18.3.1)':
+  '@pmndrs/handle@6.6.16(@types/react@19.1.2)(react@18.3.1)':
     dependencies:
-      '@pmndrs/pointer-events': 6.6.14
+      '@pmndrs/pointer-events': 6.6.16
       zustand: 4.5.6(@types/react@19.1.2)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
       - react
 
-  '@pmndrs/handle@6.6.14(@types/react@19.1.2)(react@19.1.0)':
+  '@pmndrs/handle@6.6.16(@types/react@19.1.2)(react@19.1.0)':
     dependencies:
-      '@pmndrs/pointer-events': 6.6.14
+      '@pmndrs/pointer-events': 6.6.16
       zustand: 4.5.6(@types/react@19.1.2)(react@19.1.0)
     transitivePeerDependencies:
       - '@types/react'
@@ -2505,6 +2508,8 @@ snapshots:
   '@pmndrs/msdfonts@0.8.15': {}
 
   '@pmndrs/pointer-events@6.6.14': {}
+
+  '@pmndrs/pointer-events@6.6.16': {}
 
   '@pmndrs/uikit@0.8.15(three@0.176.0)':
     dependencies:
@@ -2522,7 +2527,7 @@ snapshots:
     dependencies:
       '@iwer/devui': 1.1.1(@types/react@19.1.2)(iwer@2.0.1)
       '@iwer/sem': 0.2.5(iwer@2.0.1)
-      '@pmndrs/pointer-events': 6.6.14
+      '@pmndrs/pointer-events': 6.6.16
       iwer: 2.0.1
       meshline: 3.3.1(three@0.176.0)
       three: 0.176.0
@@ -2643,10 +2648,10 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@react-three/handle@6.6.14(@react-three/fiber@9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0))(@types/react@19.1.2)(react@19.1.0)(three@0.176.0)':
+  '@react-three/handle@6.6.16(@react-three/fiber@9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0))(@types/react@19.1.2)(react@19.1.0)(three@0.176.0)':
     dependencies:
-      '@pmndrs/handle': 6.6.14(@types/react@19.1.2)(react@19.1.0)
-      '@pmndrs/pointer-events': 6.6.14
+      '@pmndrs/handle': 6.6.16(@types/react@19.1.2)(react@19.1.0)
+      '@pmndrs/pointer-events': 6.6.16
       '@react-three/fiber': 9.1.2(@types/react@19.1.2)(react-dom@19.0.0(react@19.1.0))(react@19.1.0)(three@0.176.0)
       react: 19.1.0
       three: 0.176.0
