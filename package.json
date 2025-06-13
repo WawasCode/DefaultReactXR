@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@preact/signals-react": "^3.0.1",
+    "@preact/signals-react": "^3.2.0",
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
     "@react-three/handle": "^6.6.17",
