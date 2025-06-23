@@ -12,8 +12,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1(react@19.1.0)
       '@react-three/drei':
-        specifier: ^10.1.2
-        version: 10.1.2(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(@types/three@0.177.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)
+        specifier: ^10.3.0
+        version: 10.3.0(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(@types/three@0.177.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)
       '@react-three/fiber':
         specifier: ^9.1.2
         version: 9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)
@@ -21,8 +21,8 @@ importers:
         specifier: ^6.6.17
         version: 6.6.17(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(react@19.1.0)(three@0.177.0)
       '@react-three/uikit':
-        specifier: ^0.8.19
-        version: 0.8.19(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(react@19.1.0)(three@0.177.0)
+        specifier: ^0.8.20
+        version: 0.8.20(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(react@19.1.0)(three@0.177.0)
       '@react-three/xr':
         specifier: ^6.6.17
         version: 6.6.17(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)
@@ -44,7 +44,7 @@ importers:
         version: 9.29.0
       '@preact/preset-vite':
         specifier: ^2.10.1
-        version: 2.10.1(@babel/core@7.27.1)(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.7.1))
+        version: 2.10.1(@babel/core@7.27.1)(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.8.0))
       '@preact/signals-react-transform':
         specifier: ^0.5.1
         version: 0.5.1(@babel/core@7.27.1)(react@19.1.0)
@@ -56,7 +56,7 @@ importers:
         version: 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.4.1(vite@6.3.5(jiti@1.21.7)(yaml@2.7.1))
+        version: 4.4.1(vite@6.3.5(jiti@1.21.7)(yaml@2.8.0))
       eslint:
         specifier: ^9.26.0
         version: 9.26.0(jiti@1.21.7)
@@ -86,7 +86,7 @@ importers:
         version: 8.34.0(eslint@9.26.0(jiti@1.21.7))(typescript@5.8.3)
       vite:
         specifier: ^6.3.5
-        version: 6.3.5(jiti@1.21.7)(yaml@2.7.1)
+        version: 6.3.5(jiti@1.21.7)(yaml@2.8.0)
 
 packages:
 
@@ -586,14 +586,14 @@ packages:
   '@pmndrs/handle@6.6.17':
     resolution: {integrity: sha512-n3DBqfq+F6Uyzm74HQH2T+RyFu/UozI+gXwJfhMyg8bxvdppHyiHHHNnMP01p6JZrXthGDubhtlFsDzkIxMX2A==}
 
-  '@pmndrs/msdfonts@0.8.19':
-    resolution: {integrity: sha512-O+86cpGBPeEg2cD+HPViv+hombzqgmSlH047X/w9NnYd0r5ZmIvyDNRXSb4G2yx6y5YRQYOEs0vNN7aqxo8zgw==}
+  '@pmndrs/msdfonts@0.8.20':
+    resolution: {integrity: sha512-BwBgyAFPHKU4cBQ5Sf3UvnhINfiF3Dngp3X/DRHG0kWDfKSeMaQGyKEXpFnIOPYxwLBiBHiekMUwuKbzMdQf5A==}
 
   '@pmndrs/pointer-events@6.6.17':
     resolution: {integrity: sha512-+TumRqoq5p9ttBtSaRq0sifw2F9+EQRIeHGR3G2CVCibyfBtzbwaD1UbtYANQO03Fzks+CIsku20GpNAXihp7A==}
 
-  '@pmndrs/uikit@0.8.19':
-    resolution: {integrity: sha512-DvqTIqA+sVGezl7Nwmf0iZFquGPjXxVUOmC3Oo6UEYQbjaCgXkPwMQ5DGQAu2Ti6sr1+Y6PgaZnkXKtLWLFCXQ==}
+  '@pmndrs/uikit@0.8.20':
+    resolution: {integrity: sha512-mSrgoKWunOYy39VvLV1OZI6Tom9bjRJvA6t91ojSz3l2+NgUmJTxNiz2FyMPWfKJJSmaKlJ7mZkzSToet+cO+g==}
     peerDependencies:
       three: '>=0.160'
 
@@ -607,6 +607,9 @@ packages:
     peerDependencies:
       '@babel/core': 7.x
       vite: 2.x || 3.x || 4.x || 5.x || 6.x
+
+  '@preact/signals-core@1.10.0':
+    resolution: {integrity: sha512-qlKeXlfqtlC+sjxCPHt6Sk0/dXBrKZVcPlianqjNc/vW263YBFiP5mRrgKpHoO0q222Thm1TdYQWfCKpbbgvwA==}
 
   '@preact/signals-core@1.8.0':
     resolution: {integrity: sha512-OBvUsRZqNmjzCZXWLxkZfhcgT+Fk8DDcT/8vD6a1xhDemodyy87UJRJfASMuSD8FaAIeGgGm85ydXhm7lr4fyA==}
@@ -639,8 +642,8 @@ packages:
       preact: ^10.4.0
       vite: '>=2.0.0'
 
-  '@react-three/drei@10.1.2':
-    resolution: {integrity: sha512-CCcLAqZEvYiUErOcJgGzovY3RH6KgdrqD4ubeAx1nyGbSPLnKR9a8ynYbPdtZhIyiWqGc07z+RYQzpaOfN4ZIA==}
+  '@react-three/drei@10.3.0':
+    resolution: {integrity: sha512-+4NHCAUI38jp8XlbuKKWl/23y3F/JKdkvnYsrVXxhw150OyWKJoft+Yyd7dl6awxfV/Gn08x3R9pRRFUuDQwDA==}
     peerDependencies:
       '@react-three/fiber': ^9.0.0
       react: ^19
@@ -682,8 +685,8 @@ packages:
       react: '>=18'
       three: '*'
 
-  '@react-three/uikit@0.8.19':
-    resolution: {integrity: sha512-h9dshcQteBBUHO800UXCNDKHfZuJNLppn88lvGDdMlms8eD1Tba3Ljninbu87IppNFrhRGOCllqAXtfcWPgraQ==}
+  '@react-three/uikit@0.8.20':
+    resolution: {integrity: sha512-iIc4ELgDGk/2u7fUU8MJb1xPwKRP8Q68SsyO2zQN0HUMR5v3MhWZYvuML6SmUeA6WXiAEStlooPGOs/HggCwHw==}
     hasBin: true
     peerDependencies:
       '@react-three/fiber': '>=8'
@@ -2447,9 +2450,9 @@ packages:
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
 
-  yaml@2.7.1:
-    resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
-    engines: {node: '>= 14'}
+  yaml@2.8.0:
+    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+    engines: {node: '>= 14.6'}
     hasBin: true
 
   yocto-queue@0.1.0:
@@ -2467,20 +2470,8 @@ packages:
   zod@3.24.4:
     resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
 
-  zustand@4.5.6:
-    resolution: {integrity: sha512-ibr/n1hBzLLj5Y+yUcU7dYw8p6WnIVzdJbnX+1YpaScvZVF2ziugqHs+LAmHw4lWO9c/zRj+K1ncgWDQuthEdQ==}
-    engines: {node: '>=12.7.0'}
-    peerDependencies:
-      '@types/react': '>=16.8'
-      immer: '>=9.0.6'
-      react: '>=16.8'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      immer:
-        optional: true
-      react:
-        optional: true
+  zod@3.25.67:
+    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
 
   zustand@4.5.7:
     resolution: {integrity: sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw==}
@@ -3052,14 +3043,14 @@ snapshots:
       - immer
       - react
 
-  '@pmndrs/msdfonts@0.8.19': {}
+  '@pmndrs/msdfonts@0.8.20': {}
 
   '@pmndrs/pointer-events@6.6.17': {}
 
-  '@pmndrs/uikit@0.8.19(three@0.177.0)':
+  '@pmndrs/uikit@0.8.20(three@0.177.0)':
     dependencies:
-      '@pmndrs/msdfonts': 0.8.19
-      '@preact/signals-core': 1.8.0
+      '@pmndrs/msdfonts': 0.8.20
+      '@preact/signals-core': 1.10.0
       inline-style-parser: 0.2.4
       node-html-parser: 6.1.13
       three: 0.177.0
@@ -3082,21 +3073,23 @@ snapshots:
       - immer
       - react
 
-  '@preact/preset-vite@2.10.1(@babel/core@7.27.1)(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.7.1))':
+  '@preact/preset-vite@2.10.1(@babel/core@7.27.1)(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.27.1
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.27.1)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.27.1)
-      '@prefresh/vite': 2.4.7(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.7.1))
+      '@prefresh/vite': 2.4.7(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.8.0))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.27.1)
       debug: 4.4.0
       kolorist: 1.8.0
-      vite: 6.3.5(jiti@1.21.7)(yaml@2.7.1)
+      vite: 6.3.5(jiti@1.21.7)(yaml@2.8.0)
       vite-prerender-plugin: 0.5.6
     transitivePeerDependencies:
       - preact
       - supports-color
+
+  '@preact/signals-core@1.10.0': {}
 
   '@preact/signals-core@1.8.0': {}
 
@@ -3126,7 +3119,7 @@ snapshots:
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.7(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.7.1))':
+  '@prefresh/vite@2.4.7(preact@10.25.4)(vite@6.3.5(jiti@1.21.7)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.26.10
       '@prefresh/babel-plugin': 0.5.1
@@ -3134,11 +3127,11 @@ snapshots:
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
       preact: 10.25.4
-      vite: 6.3.5(jiti@1.21.7)(yaml@2.7.1)
+      vite: 6.3.5(jiti@1.21.7)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@react-three/drei@10.1.2(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(@types/three@0.177.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)':
+  '@react-three/drei@10.3.0(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(@types/three@0.177.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)':
     dependencies:
       '@babel/runtime': 7.27.6
       '@mediapipe/tasks-vision': 0.10.17
@@ -3205,10 +3198,10 @@ snapshots:
       - '@types/react'
       - immer
 
-  '@react-three/uikit@0.8.19(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(react@19.1.0)(three@0.177.0)':
+  '@react-three/uikit@0.8.20(@react-three/fiber@9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0))(@types/react@19.1.8)(react@19.1.0)(three@0.177.0)':
     dependencies:
-      '@pmndrs/uikit': 0.8.19(three@0.177.0)
-      '@preact/signals-core': 1.8.0
+      '@pmndrs/uikit': 0.8.20(three@0.177.0)
+      '@preact/signals-core': 1.10.0
       '@react-three/fiber': 9.1.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.177.0)
       chalk: 5.4.1
       commander: 12.1.0
@@ -3217,8 +3210,8 @@ snapshots:
       prompts: 2.4.2
       react: 19.1.0
       suspend-react: 0.1.3(react@19.1.0)
-      zod: 3.24.4
-      zustand: 4.5.6(@types/react@19.1.8)(react@19.1.0)
+      zod: 3.25.67
+      zustand: 4.5.7(@types/react@19.1.8)(react@19.1.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -3465,14 +3458,14 @@ snapshots:
       '@use-gesture/core': 10.3.1
       react: 19.1.0
 
-  '@vitejs/plugin-react@4.4.1(vite@6.3.5(jiti@1.21.7)(yaml@2.7.1))':
+  '@vitejs/plugin-react@4.4.1(vite@6.3.5(jiti@1.21.7)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.27.1
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.27.1)
       '@babel/plugin-transform-react-jsx-source': 7.27.1(@babel/core@7.27.1)
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.3.5(jiti@1.21.7)(yaml@2.7.1)
+      vite: 6.3.5(jiti@1.21.7)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -4389,28 +4382,28 @@ snapshots:
       extend: 3.0.2
       postcss: 8.4.31
 
-  postcss-import@15.1.0(postcss@8.5.3):
+  postcss-import@15.1.0(postcss@8.4.31):
     dependencies:
-      postcss: 8.5.3
+      postcss: 8.4.31
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.10
 
-  postcss-js@4.0.1(postcss@8.5.3):
+  postcss-js@4.0.1(postcss@8.4.31):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.3
+      postcss: 8.4.31
 
-  postcss-load-config@4.0.2(postcss@8.5.3):
+  postcss-load-config@4.0.2(postcss@8.4.31):
     dependencies:
       lilconfig: 3.1.3
-      yaml: 2.7.1
+      yaml: 2.8.0
     optionalDependencies:
-      postcss: 8.5.3
+      postcss: 8.4.31
 
-  postcss-nested@6.2.0(postcss@8.5.3):
+  postcss-nested@6.2.0(postcss@8.4.31):
     dependencies:
-      postcss: 8.5.3
+      postcss: 8.4.31
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -4776,11 +4769,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.3
-      postcss-import: 15.1.0(postcss@8.5.3)
-      postcss-js: 4.0.1(postcss@8.5.3)
-      postcss-load-config: 4.0.2(postcss@8.5.3)
-      postcss-nested: 6.2.0(postcss@8.5.3)
+      postcss: 8.4.31
+      postcss-import: 15.1.0(postcss@8.4.31)
+      postcss-js: 4.0.1(postcss@8.4.31)
+      postcss-load-config: 4.0.2(postcss@8.4.31)
+      postcss-nested: 6.2.0(postcss@8.4.31)
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       resolve: 1.22.10
@@ -4946,7 +4939,7 @@ snapshots:
       source-map: 0.7.4
       stack-trace: 1.0.0-pre2
 
-  vite@6.3.5(jiti@1.21.7)(yaml@2.7.1):
+  vite@6.3.5(jiti@1.21.7)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.4
       fdir: 6.4.4(picomatch@4.0.2)
@@ -4957,7 +4950,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       jiti: 1.21.7
-      yaml: 2.7.1
+      yaml: 2.8.0
 
   webgl-constants@1.1.1: {}
 
@@ -4985,7 +4978,7 @@ snapshots:
 
   yallist@3.1.1: {}
 
-  yaml@2.7.1: {}
+  yaml@2.8.0: {}
 
   yocto-queue@0.1.0: {}
 
@@ -4997,12 +4990,7 @@ snapshots:
 
   zod@3.24.4: {}
 
-  zustand@4.5.6(@types/react@19.1.8)(react@19.1.0):
-    dependencies:
-      use-sync-external-store: 1.5.0(react@19.1.0)
-    optionalDependencies:
-      '@types/react': 19.1.8
-      react: 19.1.0
+  zod@3.25.67: {}
 
   zustand@4.5.7(@types/react@19.1.8)(react@18.3.1):
     dependencies:
