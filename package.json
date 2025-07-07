@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "@preact/signals-react": "^3.0.1",
-    "@react-three/drei": "^10.3.0",
-    "@react-three/fiber": "^9.1.4",
+    "@react-three/drei": "^10.4.4",
+    "@react-three/fiber": "^9.2.0",
     "@react-three/handle": "^6.6.17",
     "@react-three/uikit": "^0.8.21",
     "@react-three/xr": "^6.6.17",
-    "@types/three": "^0.177.0",
+    "@types/three": "^0.178.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "three": "^0.177.0"
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
