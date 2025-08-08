@@ -6,48 +6,8 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "deps"
-    open-pull-requests-limit: 20
+    open-pull-requests-limit: 1
     groups:
-      react:
+      all-dependencies:
         patterns:
-          - "react"
-          - "react-*"
-          - "react-dom"
-      typescript:
-        patterns:
-          - "typescript"
-          - "@types/*"
-      linters:
-        patterns:
-          - "eslint"
-          - "eslint-*"
-          - "prettier"
-          - "prettier-*"
-      testing:
-        patterns:
-          - "jest"
-          - "jest-*"
-          - "@testing-library/*"
-          - "vitest"
-          - "cypress"
-      build-tools:
-        patterns:
-          - "webpack"
-          - "webpack-*"
-          - "rollup"
-          - "rollup-*"
-          - "vite"
-          - "vite-*"
-          - "babel"
-          - "babel-*"
-          - "@babel/*"
-      storybook:
-        patterns:
-          - "storybook"
-          - "storybook-*"
-          - "@storybook/*"
-      three-js:
-        patterns:
-          - "three"
-          - "three-*"
-          - "@react-three/*"
+          - "*"
