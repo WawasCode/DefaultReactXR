@@ -18,44 +18,6 @@ export default function App() {
     handTracking: true,
     foveation: 0,
     domOverlay: false,
-    hand: {
-      touchPointer: {
-        cursorModel: {
-          color: "blue",
-          size: 0.2,
-        },
-      },
-      grabPointer: {
-        cursorModel: {
-          color: "hotpink",
-          size: 0.2,
-        },
-      },
-      rayPointer: {
-        rayModel: { color: "green" },
-        cursorModel: {
-          color: "green",
-          size: 0.2,
-        },
-      },
-      teleportPointer: false,
-    },
-    controller: {
-      grabPointer: {
-        cursorModel: {
-          color: "hotpink",
-          size: 0.2,
-        },
-      },
-      rayPointer: {
-        rayModel: { color: "green" },
-        cursorModel: {
-          color: "green",
-          size: 0.2,
-        },
-      },
-      teleportPointer: false,
-    },
   };
   const store = createXRStore(options);
   return (
@@ -76,10 +38,14 @@ export default function App() {
             pointerEventsOrder={2}
           >
             <EnterXRButton />
-
           </Fullscreen>
-        <TestLayer />
         </IfInSessionMode>
+        <TestLayer />
+
+        <mesh position={[0, 1, 0]}>
+          <boxGeometry args={[0.5, 0.5, 0.5]} />
+          <meshStandardMaterial color="blue" />
+        </mesh>
       </XR>
     </Canvas>
   );
@@ -88,14 +54,15 @@ export default function App() {
 function TestLayer() {
   const video = useMemo(() => {
     const v = document.createElement("video");
-    v.src = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+    // Side-by-side stereo (left-right) public domain Big Buck Bunny sample
+    // 640x360 where left eye is left half and right eye is right half.
+    v.src =
+      "http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_stereo_abl.mp4";
     v.crossOrigin = "anonymous";
     v.loop = true;
-    v.muted = true;
     v.playsInline = true;
+    v.autoplay = true;
     v.preload = "auto";
-    v.setAttribute("webkit-playsinline", "true");
-    v.load();
     return v;
   }, []);
 
@@ -105,13 +72,18 @@ function TestLayer() {
   const aspect = width / height;
 
   return (
-    <group position={[0,0,-10]} >
-      <Root borderColor={"green"} borderWidth={1}>
+    <group position={[0, 0, -5]}>
+      <Root
+        //anchor causes the XR layer to shift.
+        anchorX="center"
+        anchorY="bottom"
+        borderColor={"green"}
+        borderWidth={1}
+        backgroundColor={"black"}
+      >
         <Content
-          width={1920}
-          height={1080}
-          // Uncomment this so its not floating anymore.
-          // depthAlign={"center"}
+          width={100}
+          height={45}
           onClick={() => {
             console.log("clicked");
             video.play().catch((e) => console.warn("Video play blocked", e));
@@ -123,7 +95,14 @@ function TestLayer() {
           aspectRatio={aspect}
           keepAspectRatio={false}
         >
-          <XRLayer src={video} scale={baseHeight} quality="graphics-optimized" />
+          {/* type="stereo" informs XR the source is side-by-side */}
+          <XRLayer
+            src={video}
+            type=""
+            scale={baseHeight}
+            quality="graphics-optimized"
+            layout="stereo-top-bottom"
+          />
         </Content>
       </Root>
     </group>
