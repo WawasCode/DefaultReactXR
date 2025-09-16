@@ -10,8 +10,9 @@ import {
   XRLayer,
   XRStoreOptions,
 } from "@react-three/xr";
-import { Content, Fullscreen, Root } from "@react-three/uikit";
+import { Container, Content, Fullscreen, Root } from "@react-three/uikit";
 import { EnterXRButton } from "./EnterXRButton";
+import { useSignal } from "@preact/signals-react";
 
 export default function App() {
   const options: XRStoreOptions = {
@@ -42,8 +43,8 @@ export default function App() {
         </IfInSessionMode>
         <TestLayer />
 
-        <mesh position={[0, 1, 0]}>
-          <boxGeometry args={[0.5, 0.5, 0.5]} />
+        <mesh position={[0, 1.2, 0]}>
+          <boxGeometry args={[0.2, 0.2, 0.2]} />
           <meshStandardMaterial color="blue" />
         </mesh>
       </XR>
@@ -52,6 +53,7 @@ export default function App() {
 }
 
 function TestLayer() {
+  const show = useSignal(true);
   const video = useMemo(() => {
     const v = document.createElement("video");
     // Side-by-side stereo (left-right) public domain Big Buck Bunny sample
@@ -72,18 +74,24 @@ function TestLayer() {
   const aspect = width / height;
 
   return (
-    <group position={[0, 0, -5]}>
+    <group position={[0, 1, -1]}>
       <Root
         //anchor causes the XR layer to shift.
-        anchorX="center"
-        anchorY="bottom"
+
         borderColor={"green"}
         borderWidth={1}
-        backgroundColor={"black"}
+        backgroundColor={"pink"}
       >
+        <Container
+          width={30}
+          height={30}
+          backgroundColor={"purple"}
+          onClick={() => (show.value = !show.value)}
+        ></Container>
         <Content
           width={100}
           height={45}
+          depthAlign={"back"}
           onClick={() => {
             console.log("clicked");
             video.play().catch((e) => console.warn("Video play blocked", e));
@@ -94,14 +102,18 @@ function TestLayer() {
           borderWidth={4}
           aspectRatio={aspect}
           keepAspectRatio={false}
+          depthTest={false}
+          depthWrite={false}
         >
           {/* type="stereo" informs XR the source is side-by-side */}
           <XRLayer
             src={video}
             type=""
-            scale={baseHeight}
+            scale={show.value ? baseHeight : 0}
             quality="graphics-optimized"
             layout="stereo-top-bottom"
+            renderPriority={9999}
+            renderOrder={9999}
           />
         </Content>
       </Root>

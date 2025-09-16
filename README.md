@@ -18,7 +18,7 @@ This template provides a minimal setup for developing with **React Three XR**, l
 
 ## Open in Stackblitz
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/WawasCode/DefaultReactXR/tree/xr_layer_shif)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/WawasCode/DefaultReactXR/tree/overlapin-xrlayer)
 
 The button above will be automaticaly updatet depending on witch branch you are.
 You jsut need to run `./setup.sh` for the first time you fork this Repository.
