@@ -10,25 +10,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@preact/signals-react": "^3.3.1",
+    "@preact/signals-react": "^3.4.0",
     "@react-three/drei": "^10.7.6",
     "@react-three/fiber": "^9.4.0",
     "@react-three/handle": "^6.6.27",
-    "@react-three/uikit": "^1.0.56",
+    "@react-three/uikit": "^1.0.58",
     "@react-three/xr": "^6.6.27",
     "@types/three": "^0.181.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "three": "^0.181.0"
+    "three": "^0.181.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.0",
+    "@eslint/js": "^9.39.1",
     "@preact/preset-vite": "^2.10.2",
     "@preact/signals-react-transform": "^0.6.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
-    "eslint": "^9.39.0",
+    "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react-hooks": "^7.0.1",
@@ -36,7 +36,7 @@
     "globals": "^16.5.0",
     "prettier": "^3.6.2",
     "typescript": "~5.9.3",
-    "typescript-eslint": "^8.46.2",
-    "vite": "^7.1.12"
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.2.2"
   }
 }
