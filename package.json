@@ -14,12 +14,12 @@
     "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.8.2",
     "@react-three/handle": "^6.6.32",
-    "@react-three/uikit": "^1.0.77",
+    "@react-three/uikit": "^1.0.78",
     "@react-three/xr": "^6.6.32",
     "@types/three": "^0.184.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "three": "^0.186.1"
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -28,7 +28,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
-    "eslint": "^10.12.0",
+    "eslint": "^10.13.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.7",
     "eslint-plugin-react-hooks": "^7.1.1",
@@ -36,12 +36,12 @@
     "globals": "^17.13.0",
     "prettier": "^3.9.10",
     "typescript": "~7.0.2",
-    "typescript-eslint": "^8.71.2",
-    "vite": "^8.3.4"
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.5"
   },
   "pnpm": {
     "overrides": {
-      "three": "0.186.1"
+      "three": "0.187.0"
     }
   }
 }
